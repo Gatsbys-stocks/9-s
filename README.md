@@ -44,45 +44,7 @@ Un equipo de desarrollo necesita una web que **explique qué hace, enseñe lo qu
 └── package.json          # Sin dependencias
 ```
 
-## Configuración (solo `js/app.js`, primeras líneas)
 
-```js
-const CONTACT = {
-  whatsapp: '34662925875',   // código de país + número, solo dígitos
-  email: '',                 // opcional: aparece en el pie de página
-};
-const BUDGET = { min: 90, max: 1200, start: 300, currency: '€', quick: [90, 150, 300, 600, 1200] };
-```
-
-## Ejecutar en local
-
-Necesitas [Node.js](https://nodejs.org) 18 o superior (no se instala nada más):
-
-```bash
-npm start          # abre http://localhost:5173
-npm run check      # comprobaciones de seguridad y calidad
-```
-
-También puedes abrir `index.html` directamente con doble clic.
-
-## Publicar en GitHub Pages
-
-1. Crea un repositorio en GitHub (por ejemplo `9s-web`) y sube estos archivos:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Primera versión de la web de 9's"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/9s-web.git
-   git push -u origin main
-   ```
-
-2. En el repositorio: **Settings → Pages → Build and deployment → Source: "Deploy from a branch"**, rama `main`, carpeta `/ (root)`. Guarda.
-3. En un minuto tendrás la web en `https://TU-USUARIO.github.io/9s-web/`.
-4. *(Opcional)* Dominio propio: en la misma pantalla escribe tu dominio y activa **Enforce HTTPS**.
-
-> En un repositorio de proyecto la web vive en `/9s-web/`. Todas las rutas son relativas, así que funciona sin cambios. Solo la `404.html` asume que el enlace roto está en la raíz del sitio.
 
 ## Seguridad
 
