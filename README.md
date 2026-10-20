@@ -12,7 +12,7 @@ Un equipo de desarrollo necesita una web que **explique qué hace, enseñe lo qu
 - **Inicio con la mascota** sobre una peana plateada que sigue el cursor, y un recuadro donde se escribe código en tiempo real.
 - **Servicios en tres tamaños** (web sencilla, profesional y sistema a medida), con una tarjeta por servicio.
 - **"Lo que podemos construir para ti"**: cuatro ideas de proyecto de ejemplo. Al pulsar una, se abre WhatsApp con un mensaje listo sobre ese proyecto.
-- **Barra de presupuesto (68 € – 1200 €)**: el cliente mueve la barra, describe lo que quiere y ve una **vista previa del mensaje** antes de enviarlo por WhatsApp.
+- **Barra de presupuesto (90 € – 1200 €)**: el cliente mueve la barra, describe lo que quiere y ve una **vista previa del mensaje** antes de enviarlo por WhatsApp.
 - **Proceso en formato `git log`**, preguntas frecuentes (acordeón accesible) y página **404** propia.
 - **Adaptado a móvil**: menú desplegable, botones táctiles grandes, botón flotante de WhatsApp que aparece al hacer scroll y respeto de las zonas seguras de iPhone.
 - **Accesible**: HTML semántico, foco visible, `aria-*` en menú y controles, soporte de `prefers-reduced-motion`.
@@ -51,7 +51,7 @@ const CONTACT = {
   whatsapp: '34662925875',   // código de país + número, solo dígitos
   email: '',                 // opcional: aparece en el pie de página
 };
-const BUDGET = { min: 68, max: 1200, start: 300, currency: '€', quick: [68, 150, 300, 600, 1200] };
+const BUDGET = { min: 90, max: 1200, start: 300, currency: '€', quick: [90, 150, 300, 600, 1200] };
 ```
 
 ## Ejecutar en local

@@ -5,7 +5,7 @@ const CONTACT = {
   whatsapp: '34662925875',   // número que recibe los mensajes (código de país + número, sin + ni espacios)
   email: '',                 // opcional: si lo pones, aparece en el pie de página
 };
-const BUDGET = { min: 68, max: 1200, start: 300, currency: '€', quick: [68, 150, 300, 600, 1200] };
+const BUDGET = { min: 90, max: 1200, start: 300, currency: '€', quick: [90, 150, 300, 600, 1200] };
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
