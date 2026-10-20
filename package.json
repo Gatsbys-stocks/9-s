@@ -1,0 +1,13 @@
+{
+  "name": "9s-web",
+  "version": "1.0.0",
+  "description": "Web de 9's: páginas web y sistemas a tu medida. Sitio estático sin dependencias.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>9's — Páginas web y sistemas a tu medida</title>
+<meta name="description" content="9's es un equipo que programa páginas web de todo tipo: desde landings sencillas hasta sistemas profesionales con reservas, pagos y panel de administración.">
+<meta name="theme-color" content="#0a0b0d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="9's — Páginas web y sistemas a tu medida">
+<meta property="og:description" content="Desde una página sencilla hasta sistemas con reservas, pagos y panel de administración.">
+<meta property="og:image" content="img/hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/boot.js"></script>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="9's, inicio">
+      <img src="img/h_neutral.png" alt="" width="38" height="32">
+      <span>9's</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#faq">Preguntas</a>
+      <a class="btn btn--sm" href="#contacto">Presupuesto</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero__frame">
+
+    <div class="codebox" aria-label="Fragmento de código decorativo">
+      <p class="codebox__label">// 9's · mapache.js</p>
+      <pre class="code"><code id="typed"></code><b class="caret"></b></pre>
+    </div>
+
+    <div class="pedestal" id="pedestal">
+      <i class="pedestal__glow" aria-hidden="true"></i>
+      <i class="pedestal__plate" aria-hidden="true"></i>
+      <i class="pedestal__floor" aria-hidden="true"></i>
+      <img class="hero-raccoon" id="heroRaccoon" src="img/hero.png" alt="Debug, el mapache mascota de 9's, sentado y con cara de pocos amigos" width="729" height="916">
+      <div class="bubble" id="bubble" role="status" aria-live="off">// compilando café…</div>
+    </div>
+
+    <div class="hero__title">
+      <p class="mono-label">[ de una página a un sistema completo ]</p>
+      <h1>Webs que<br><span class="boxed">funcionan</span>.</h1>
+    </div>
+
+    <div class="hero__side">
+      <p>Somos <strong>9's</strong>: programamos páginas web de todo tipo, desde una landing sencilla hasta sistemas con <strong>reservas, pagos y panel de administración</strong>.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#contacto">Calcular mi presupuesto <span aria-hidden="true">→</span></a>
+        <a class="scroll-btn" href="#servicios" aria-label="Ir a servicios">↓</a>
+      </div>
+      <p class="mono-label mono-label--dim">Diseño propio · Responsive · Soporte</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <header class="sec__head rv">
+      <p class="eyebrow">01 — Servicios</p>
+      <h2>Elige el tamaño.<br><span class="dim">Nosotros hacemos el resto.</span></h2>
+      <p class="sub">Desde lo más simple hasta un sistema a la medida de tu negocio. Si no encaja en ninguna caja, lo diseñamos desde cero.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card rv">
+        <img class="card__sprite" src="img/idle.png" alt="" aria-hidden="true" width="143" height="143">
+        <p class="card__tag">01 / básica</p>
+        <h3>Web sencilla</h3>
+        <p class="card__for">Para presentarte en internet, rápido y bien hecho.</p>
+        <ul class="list">
+          <li>Una página o pocas secciones</li>
+          <li>Diseño adaptable a móvil</li>
+          <li>Botón de WhatsApp y formulario</li>
+          <li>Te ayudamos con dominio y hosting</li>
+        </ul>
+        <button class="card__link wa-go" type="button" data-msg="una web sencilla (una página o pocas secciones)">Pedir por WhatsApp <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="card card--pop rv d1">
+        <span class="card__ribbon">el más pedido</span>
+        <img class="card__sprite" src="img/typing.png" alt="" aria-hidden="true" width="185" height="126">
+        <p class="card__tag">02 / profesional</p>
+        <h3>Web profesional</h3>
+        <p class="card__for">Para negocios que quieren verse serios y vender más.</p>
+        <ul class="list">
+          <li>Varias páginas con identidad propia</li>
+          <li>Blog o noticias que tú mismo editas</li>
+          <li>SEO para que te encuentren en Google</li>
+          <li>Animaciones, mapas e integraciones</li>
+        </ul>
+        <button class="card__link wa-go" type="button" data-msg="una web profesional (varias páginas, blog, SEO)">Pedir por WhatsApp <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="card rv d2">
+        <img class="card__sprite" src="img/coffee.png" alt="" aria-hidden="true" width="178" height="125">
+        <p class="card__tag">03 / sistema completo</p>
+        <h3>Sistema a medida</h3>
+        <p class="card__for">Para automatizar tu negocio: menos mensajes, más control.</p>
+        <ul class="list">
+          <li>Reservas online con calendario</li>
+          <li>Pagos en línea y cuentas de usuario</li>
+          <li>Panel de administración propio</li>
+          <li>Avisos por correo y conexión con otras apps</li>
+        </ul>
+        <button class="card__link wa-go" type="button" data-msg="un sistema a medida (reservas, pagos y panel de administración)">Pedir por WhatsApp <span aria-hidden="true">→</span></button>
+      </article>
+    </div>
+
+    <aside class="wide rv">
+      <img src="img/box.png" alt="" aria-hidden="true" width="134" height="131">
+      <div>
+        <h3>¿Algo que no está en la lista?</h3>
+        <p>Cotizadores, portales de clientes, catálogos, plataformas de cursos, sistemas internos… Cuéntanos qué necesitas y lo programamos.</p>
+      </div>
+      <button class="btn btn--ghost wa-go" type="button" data-msg="un proyecto distinto a los de la lista">Contarles mi idea</button>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ EJEMPLOS ============ -->
+<section class="sec sec--band" id="ejemplos">
+  <div class="wrap">
+    <header class="sec__head rv">
+      <p class="eyebrow">02 — Ideas de proyecto</p>
+      <h2>Lo que podemos<br><span class="dim">construir para ti.</span></h2>
+      <p class="sub">Conceptos de ejemplo para que imagines tu proyecto. No son clientes reales: son puntos de partida que adaptamos a tu negocio. Toca el que te guste y me escribes directo por WhatsApp.</p>
+    </header>
+
+    <div class="ideas">
+      <article class="idea rv tint-1">
+        <div class="mock" aria-hidden="true">
+          <div class="mock__bar"><i></i><i></i><i></i></div>
+          <div class="mock__body">
+            <div class="mock__hero"><b></b><span></span><em></em></div>
+            <div class="mock__grid"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <p class="idea__tag">reservas</p>
+        <h3>Barbería o salón</h3>
+        <p>Los clientes eligen servicio, día y hora desde el celular. Tú ves la agenda del día y reduces los mensajes de "¿tienes espacio?".</p>
+        <button class="idea__btn wa-go" type="button" data-msg="una web para una barbería o salón con reservas online y panel de agenda">Quiero algo así <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="idea rv tint-2 d1">
+        <div class="mock" aria-hidden="true">
+          <div class="mock__bar"><i></i><i></i><i></i></div>
+          <div class="mock__body">
+            <div class="mock__hero"><b></b><span></span><em></em></div>
+            <div class="mock__grid"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <p class="idea__tag">tienda</p>
+        <h3>Tienda online</h3>
+        <p>Catálogo, carrito y pagos en línea. Con panel para subir productos, ver pedidos y llevar el control de tu inventario.</p>
+        <button class="idea__btn wa-go" type="button" data-msg="una tienda online con catálogo, pagos en línea y panel de administración">Quiero algo así <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="idea rv tint-3 d2">
+        <div class="mock" aria-hidden="true">
+          <div class="mock__bar"><i></i><i></i><i></i></div>
+          <div class="mock__body">
+            <div class="mock__hero"><b></b><span></span><em></em></div>
+            <div class="mock__grid"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <p class="idea__tag">restaurante</p>
+        <h3>Carta digital y mesas</h3>
+        <p>Menú que se actualiza solo, reservas de mesa con aviso por correo y una página bonita que se ve bien en cualquier pantalla.</p>
+        <button class="idea__btn wa-go" type="button" data-msg="una web para un restaurante con carta digital y reservas de mesa">Quiero algo así <span aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="idea rv tint-4 d3">
+        <div class="mock" aria-hidden="true">
+          <div class="mock__bar"><i></i><i></i><i></i></div>
+          <div class="mock__body">
+            <div class="mock__hero"><b></b><span></span><em></em></div>
+            <div class="mock__grid"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <p class="idea__tag">servicios</p>
+        <h3>Consultorio o academia</h3>
+        <p>Citas o clases con recordatorios, cuentas para tus clientes y un panel para gestionar horarios, cupos y pagos.</p>
+        <button class="idea__btn wa-go" type="button" data-msg="un sistema de citas o clases con cuentas de usuario, recordatorios y pagos">Quiero algo así <span aria-hidden="true">→</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section class="sec" id="proceso">
+  <div class="wrap process">
+    <header class="sec__head process__head rv">
+      <p class="eyebrow">03 — Proceso</p>
+      <h2>Cómo trabajamos,<br><span class="dim">en formato <code>git log</code>.</span></h2>
+      <p class="sub">Sin sorpresas: ves avances en cada paso y apruebas antes de seguir.</p>
+      <img class="process__sprite" src="img/stretch.png" alt="" aria-hidden="true">
+    </header>
+
+    <ol class="log-list">
+      <li class="commit rv">
+        <code class="hash">a1b2c3d</code>
+        <div>
+          <p class="commit__type">init</p>
+          <h3>Hablamos</h3>
+          <p>Nos cuentas tu idea, tu negocio y lo que necesitas. Te decimos qué es posible, cómo lo haríamos y qué opciones hay.</p>
+        </div>
+        <img src="img/sit2.png" alt="" aria-hidden="true">
+      </li>
+      <li class="commit rv">
+        <code class="hash">e4f5a6b</code>
+        <div>
+          <p class="commit__type">design</p>
+          <h3>Diseñamos</h3>
+          <p>Armamos el diseño visual de tu sitio. Lo ves, pides cambios y lo apruebas antes de escribir una sola línea de código.</p>
+        </div>
+        <img src="img/camera.png" alt="" aria-hidden="true">
+      </li>
+      <li class="commit rv">
+        <code class="hash">c7d8e9f</code>
+        <div>
+          <p class="commit__type">feat</p>
+          <h3>Programamos</h3>
+          <p>Construimos todo: páginas, reservas, pagos, panel. Probamos en cada paso y te mostramos avances para que nada te sorprenda.</p>
+        </div>
+        <img src="img/laptop2.png" alt="" aria-hidden="true">
+      </li>
+      <li class="commit rv">
+        <code class="hash">0a1b2c3</code>
+        <div>
+          <p class="commit__type">deploy</p>
+          <h3>Lanzamos y te acompañamos</h3>
+          <p>Publicamos tu sitio, te enseñamos a usarlo y seguimos disponibles cuando algo cambie o necesites crecer.</p>
+        </div>
+        <img src="img/music.png" alt="" aria-hidden="true">
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec sec--band" id="faq">
+  <div class="wrap faq">
+    <header class="sec__head rv">
+      <p class="eyebrow">04 — Preguntas</p>
+      <h2>Lo que casi<br><span class="dim">todos preguntan.</span></h2>
+      <p class="sub">¿Tienes otra duda? Escríbenos y la resolvemos sin compromiso.</p>
+      <img class="faq__sprite" src="img/sit3.png" alt="" aria-hidden="true">
+    </header>
+
+    <div class="faq__list rv">
+      <details name="faq" open>
+        <summary>¿Cuánto cuesta una página web?</summary>
+        <p>Depende de lo que necesites: no cuesta lo mismo una página de presentación que un sistema con reservas, pagos y panel de administración. Usa la barra de presupuesto de más abajo, cuéntanos tu idea y te confirmamos un precio claro, sin compromiso.</p>
+      </details>
+      <details name="faq">
+        <summary>¿Cuánto tarda en estar lista?</summary>
+        <p>Una web sencilla es rápida; un sistema completo lleva más tiempo. Antes de empezar te damos un calendario claro por etapas, para que sepas cuándo ver cada avance.</p>
+      </details>
+      <details name="faq">
+        <summary>¿Necesito tener dominio y hosting?</summary>
+        <p>No tienes que saber nada de eso. Si ya tienes dominio o hosting, lo usamos; si no, te explicamos las opciones y te ayudamos a contratarlo y configurarlo.</p>
+      </details>
+      <details name="faq">
+        <summary>¿Podré cambiar textos, fotos o productos yo mismo?</summary>
+        <p>Sí. Según el proyecto, dejamos un panel sencillo para que edites lo que cambie seguido, sin depender de nadie para cada detalle.</p>
+      </details>
+      <details name="faq">
+        <summary>¿Hacen sistemas de reservas con pagos en línea?</summary>
+        <p>Sí. Lo adaptamos a tu negocio: servicios, horarios, cupos, pagos, avisos por correo o WhatsApp y un panel para gestionarlo todo.</p>
+      </details>
+      <details name="faq">
+        <summary>¿Qué pasa después de lanzar la web?</summary>
+        <p>No desaparecemos. Te enseñamos a usarla y seguimos disponibles para corregir, mantener o ampliar tu proyecto cuando lo necesites.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO / PRESUPUESTO ============ -->
+<section class="sec sec--glow" id="contacto">
+  <div class="wrap contact">
+    <div class="contact__copy rv">
+      <p class="eyebrow">05 — Contacto</p>
+      <h2>Cuéntanos qué quieres<br><span class="dim">y tu presupuesto.</span></h2>
+      <p class="sub">Mueve la barra, describe tu idea y te llega a mi WhatsApp al instante. Sin compromiso: el presupuesto es orientativo y te confirmo el precio según lo que necesites.</p>
+
+      <div class="wa-preview" aria-live="polite">
+        <p class="wa-preview__title">Así llegará tu mensaje</p>
+        <div class="wa-bubble" id="waPreview"></div>
+      </div>
+    </div>
+
+    <form class="form rv" id="budgetForm" novalidate>
+      <label><span>Tu nombre <span class="opt">(opcional)</span></span>
+        <input id="cName" name="nombre" type="text" placeholder="¿Cómo te llamas?" autocomplete="given-name">
+      </label>
+
+      <div class="budget">
+        <div class="budget__top">
+          <label for="budget">Presupuesto aproximado</label>
+          <output class="budget__val" id="budgetVal" for="budget">68 €</output>
+        </div>
+        <input id="budget" name="presupuesto" type="range" min="68" max="1200" step="1" value="300" aria-describedby="budgetHint">
+        <div class="budget__scale" aria-hidden="true"><span id="scaleMin">68 €</span><span id="scaleMax">1.200 €</span></div>
+        <div class="budget__quick" id="budgetQuick" role="group" aria-label="Presupuestos rápidos"></div>
+        <p class="budget__hint" id="budgetHint">Es solo una guía para saber por dónde ir.</p>
+      </div>
+
+      <label><span>¿Qué quieres que hagamos?</span>
+        <textarea id="cMsg" name="mensaje" rows="5" required placeholder="Ej.: una web para mi barbería con reservas online, o una tienda para vender mis productos…"></textarea>
+      </label>
+
+      <button class="btn btn--lg" type="submit">Enviar por WhatsApp <span aria-hidden="true">→</span></button>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <img src="img/blanket.png" alt="" aria-hidden="true" class="foot__sprite">
+    <p><strong>9's</strong> · páginas web y sistemas a tu medida</p>
+    <p class="muted">© <span id="year">2026</span> 9's. <span id="footMail"></span></p>
+    <a href="#top" class="foot__up">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<a class="wa" id="waBtn" href="#contacto" hidden aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener noreferrer">
+  <img src="img/typing.png" alt="" aria-hidden="true"><span>WhatsApp</span>
+</a>
+
+<script src="js/app.js"></script>
+</body>
+</html>
