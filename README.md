@@ -57,15 +57,43 @@ const BUDGET = { min: 90, max: 1200, start: 300, currency: '€', quick: [90, 15
 
 ## Estadísticas de visitas (GoatCounter)
 
-La web cuenta visitas con [GoatCounter](https://www.goatcounter.com): sin cookies, sin guardar datos personales y sin banner de cookies. El panel está en https://web-build.goatcounter.com.
+La web cuenta visitas con [GoatCounter](https://www.goatcounter.com): sin cookies, sin guardar datos personales y sin banner de cookies. El panel está en https://9-s.goatcounter.com.
 
 - El script oficial está **copiado en `js/count.js`** (licencia ISC) en lugar de cargarlo desde `gc.zgo.at`: así la política de seguridad no necesita permitir scripts de terceros.
-- La CSP solo permite enviar datos a `https://web-build.goatcounter.com` (`img-src` y `connect-src` en `index.html` y `_headers`).
+- La CSP solo permite enviar datos a `https://9-s.goatcounter.com` (`img-src` y `connect-src` en `index.html` y `_headers`).
 - Si cambias el nombre de tu cuenta de GoatCounter, cambia esa URL en tres sitios: la etiqueta `<script data-goatcounter=...>` y la CSP de `index.html`, y `_headers`.
 - GoatCounter no cuenta las visitas desde `localhost`. Para que no cuente tus propias visitas, abre tu web con `#toggle-goatcounter` al final de la dirección una vez en cada navegador.
 - Los bloqueadores de anuncios (uBlock, etc.) pueden impedir el conteo de algunos visitantes: es normal.
 
+## Ejecutar en local
 
+Necesitas [Node.js](https://nodejs.org) 18 o superior (no se instala nada más):
+
+```bash
+npm start          # abre http://localhost:5173
+npm run check      # comprobaciones de seguridad y calidad
+```
+
+También puedes abrir `index.html` directamente con doble clic.
+
+## Publicar en GitHub Pages
+
+1. Crea un repositorio en GitHub (por ejemplo `9s-web`) y sube estos archivos:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Primera versión de la web de 9's"
+   git branch -M main
+   git remote add origin https://github.com/TU-USUARIO/9s-web.git
+   git push -u origin main
+   ```
+
+2. En el repositorio: **Settings → Pages → Build and deployment → Source: "Deploy from a branch"**, rama `main`, carpeta `/ (root)`. Guarda.
+3. En un minuto tendrás la web en `https://TU-USUARIO.github.io/9s-web/`.
+4. *(Opcional)* Dominio propio: en la misma pantalla escribe tu dominio y activa **Enforce HTTPS**.
+
+> En un repositorio de proyecto la web vive en `/9s-web/`. Todas las rutas son relativas, así que funciona sin cambios. Solo la `404.html` asume que el enlace roto está en la raíz del sitio.
 
 ## Seguridad
 

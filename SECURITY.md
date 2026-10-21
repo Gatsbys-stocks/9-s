@@ -15,7 +15,7 @@ Responderemos lo antes posible y corregiremos el problema antes de hacerlo públ
 - **Sitio 100 % estático**: no hay servidor, base de datos, cuentas ni contraseñas que atacar.
 - **Sin secretos en el repositorio**: no hay claves de API, tokens ni credenciales. El `.gitignore` bloquea `.env`, `*.pem` y `*.key`.
 - **Content Security Policy estricta** (`<meta>` en `index.html` y `_headers`): solo se ejecuta código de nuestro propio dominio, sin scripts ni estilos en línea, sin recursos de terceros.
-- **Analítica respetuosa**: GoatCounter sin cookies ni datos personales; su script está alojado en el propio repo y la CSP solo permite enviarle datos a `web-build.goatcounter.com`.
+- **Analítica respetuosa**: GoatCounter sin cookies ni datos personales; su script está alojado en el propio repo y la CSP solo permite enviarle datos a `9-s.goatcounter.com`.
 - **Sin dependencias**: no hay `node_modules` ni paquetes que puedan ser comprometidos (`package.json` no tiene dependencias).
 - **Fuentes alojadas en el propio repositorio** (sin Google Fonts): no se envía la IP de los visitantes a terceros.
 - **Sin `innerHTML` con datos externos**: el contenido que viene de la configuración o del usuario se inserta con `textContent`/DOM.

@@ -1,7 +1,7 @@
 # Cabeceras de seguridad para Netlify / Cloudflare Pages.
 # GitHub Pages NO permite cabeceras propias: allí funciona la CSP del <meta> de index.html.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://web-build.goatcounter.com; font-src 'self'; connect-src 'self' https://web-build.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://9-s.goatcounter.com; font-src 'self'; connect-src 'self' https://9-s.goatcounter.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
